@@ -1,0 +1,41 @@
+body {
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #000;
+    cursor: crosshair;
+}
+
+p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.disable-selection {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+h1 {
+    font-weight: bold; 
+}
+
+h1::after {
+    content: 'OLiviyak';
+    font-size: 12px;
+    position: absolute;
+    top: 3 px;
+    padding-left: 5px;
+    font-weight: 400;
+}
